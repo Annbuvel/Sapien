@@ -1,0 +1,10 @@
+!com.cnf.esb.ui.beans.DatabaseType
+dbType: Microsoft SQL Server
+jdbcURL: "jdbc:sqlserver://<hostname>:<portNum>;DatabaseName=<database name>"
+jdbcDriver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+---
+!com.cnf.esb.ui.beans.DatabaseType
+dbType: HSQL
+jdbcURL: "jdbc:hsqldb:file:«database/path?»"
+jdbcDriver: org.hsqldb.jdbcDriver
+

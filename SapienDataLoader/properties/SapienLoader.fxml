@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.collections.*?>
+
+<AnchorPane maxHeight="738.0" maxWidth="849.0" minHeight="702.0" minWidth="849.0" prefHeight="738.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.cnf.esb.ui.controller.SapienDataUploadController">
+   <children>
+      <Label layoutX="266.0" layoutY="14.0" prefHeight="57.0" prefWidth="320.0" text="SAPIEN Data Loader" underline="true">
+         <font>
+            <Font name="Barclays Sans Bold" size="33.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <SplitPane layoutX="14.0" layoutY="77.0" prefHeight="347.0" prefWidth="388.0">
+         <items>
+            <AnchorPane fx:id="dataSourceConnectionController" prefHeight="345.0" prefWidth="386.0">
+               <children>
+				<Label layoutX="12.0" layoutY="19.0" text="Recent Connections" />
+				<ComboBox fx:id="dbConnectionProfile" layoutX="136.0" layoutY="13.0" onAction="#loadRecentConnections" prefHeight="25.0" prefWidth="227.0">
+                  <items>
+        				<FXCollections fx:factory="observableArrayList">
+         				<String fx:value="Item 1" />
+          				<String fx:value="Item 2" />
+          				<String fx:value="Item 3" />
+        				</FXCollections>
+      			  </items>
+      			  </ComboBox>
+      			  <Label layoutX="14.0" layoutY="60.0" text="Connection Name" />
+      			   <TextField fx:id="connectionName" layoutX="136.0" layoutY="58.0" prefHeight="25.0" prefWidth="227.0" />
+      			    <Label layoutX="13.0" layoutY="108.0" text="Database Type" />
+      			    <ComboBox fx:id="dbType" layoutX="136.0" layoutY="105.0" onAction="#selectDBType" prefHeight="25.0" prefWidth="227.0" >
+                     <items>
+        				<FXCollections fx:factory="observableArrayList">
+         				<String fx:value="Item 1" />
+          				<String fx:value="Item 2" />
+          				<String fx:value="Item 3" />
+        				</FXCollections>
+      			     </items>
+      			   </ComboBox>
+      			   <Label layoutX="13.0" layoutY="158.0" text="JDBC URL" />
+      			   <TextField fx:id="jdbcURL" layoutX="136.0" layoutY="154.0" prefHeight="25.0" prefWidth="227.0" />
+                  <Label layoutX="17.0" layoutY="207.0" text="User Name" />
+                  <TextField fx:id="dbUser" layoutX="137.0" layoutY="203.0" prefHeight="25.0" prefWidth="227.0" />
+                  <Label layoutX="19.0" layoutY="254.0" text="Password" />
+                  <PasswordField fx:id="dbPass" layoutX="136.0" layoutY="250.0" prefHeight="25.0" prefWidth="227.0" />
+                  <Label fx:id="connectionStatus" disable="true" layoutX="151.0" layoutY="279.0" prefHeight="17.0" prefWidth="202.0" />
+                  <Button layoutX="126.0" layoutY="305.0" mnemonicParsing="false" onAction="#testDataSourceConnection" prefHeight="25.0" prefWidth="106.0" text="Test Connection" />
+                  <Button fx:id="setDBParams" layoutX="256.0" layoutY="305.0" mnemonicParsing="false" onAction="#setDataSourceConnection" prefHeight="25.0" prefWidth="106.0" text="Set" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="440.0" layoutY="77.0" prefHeight="347.0" prefWidth="386.0">
+         <items>
+            <AnchorPane fx:id="sapienDataUploadController" prefHeight="349.0" prefWidth="384.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="140.0" text="File Location" />
+                  <TextField fx:id="filePath" disable="true" layoutX="98.0" layoutY="136.0" prefHeight="25.0" prefWidth="190.0" />
+                  <Button fx:id="browse" disable="true" layoutX="295.0" layoutY="136.0" mnemonicParsing="false" onAction="#browseFile" prefHeight="25.0" prefWidth="75.0" text="Browse" /> 
+                  <Button fx:id="upload" disable="true" layoutX="155.0" layoutY="187.0" mnemonicParsing="false" onAction="#uploadData" prefHeight="25.0" prefWidth="75.0" text="Upload" />
+               </children>
+               <effect>
+                  <Glow />
+               </effect>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <SplitPane layoutX="15.0" layoutY="452.0" prefHeight="230.0" prefWidth="817.0">
+         <items>
+            <AnchorPane prefHeight="198.0" prefWidth="816.0">
+               <children>
+                  <TextArea fx:id="messageBox" layoutX="7.0" layoutY="7.0" prefHeight="218.0" prefWidth="808.0" />
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+      <Label layoutX="14.0" layoutY="424.0" prefHeight="17.0" prefWidth="124.0" text="Messages" underline="true">
+         <font>
+            <Font name="Barclays Sans" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="338.0" layoutY="691.0" mnemonicParsing="false" onAction="#close" prefHeight="25.0" prefWidth="170.0" text="Close" />
+   </children>
+</AnchorPane>

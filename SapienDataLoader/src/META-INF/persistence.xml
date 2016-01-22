@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="SapienDataLoader" transaction-type="RESOURCE_LOCAL">
+		<class>com.cnf.esb.utils.beans.RIATCHCINT</class>
+		<class>com.cnf.esb.utils.beans.RIATCHCINT_PK</class>
+		<class>com.cnf.esb.utils.beans.RICNOTFINT</class>
+		<class>com.cnf.esb.utils.beans.RICNTRINT</class>
+		<class>com.cnf.esb.utils.beans.RICSOBJINT</class>
+		<class>com.cnf.esb.utils.beans.RIREINSINT</class>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:hsqldb:C:\Workouts\Db"/>
+			<property name="javax.persistence.jdbc.user" value="sa"/>
+			<property name="javax.persistence.jdbc.driver" value="org.hsqldb.jdbcDriver"/>
+			<property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+			<property name="javax.persistence.jdbc.password" value=""/>
+			<property name="javax.persistence.schema-generation.create-database-schemas" value="false"/>
+			<property name="javax.persistence.schema-generation.scripts.action" value="create"/>
+			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="database"/>
+		</properties>
+	</persistence-unit>
+</persistence>

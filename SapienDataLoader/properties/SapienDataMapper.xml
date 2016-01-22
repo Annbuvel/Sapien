@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbook>
+	<worksheet name="RICNTRINT">
+		<section startRow="1" endRow="1" />
+		<loop startRow="1" endRow="0" items="RICNTRINT" var="ricntrint"
+			varType="com.cnf.esb.utils.beans.RICNTRINT">
+			<section startRow="1" endRow="1">
+				<!-- <mapping row="1" col="0">ricntrint.cnt_intr_seq_no </mapping> -->
+				<mapping row="1" col="1">ricntrint.record_ind </mapping>
+				<mapping row="1" col="2">ricntrint.ext_contract_ref </mapping>
+				<mapping row="1" col="3">ricntrint.ext_section_ref </mapping>
+				<mapping row="1" col="4">ricntrint.cont_start_date </mapping>
+				<mapping row="1" col="5 ">ricntrint.cont_end_date </mapping>
+				<mapping row="1" col="6">ricntrint.contract_source </mapping>
+				<mapping row="1" col="7">ricntrint.contract_name </mapping>
+				<mapping row="1" col="8">ricntrint.contract_sl_name </mapping>
+				<mapping row="1" col="9">ricntrint.contract_type </mapping>
+				<mapping row="1" col="10">ricntrint.cont_nature </mapping>
+				<mapping row="1" col="11">ricntrint.xol_type </mapping>
+				<mapping row="1" col="12">ricntrint.contract_status </mapping>
+				<mapping row="1" col="13">ricntrint.document_rfrnce </mapping>
+				<mapping row="1" col="14">ricntrint.contract_ref_no </mapping>
+				<mapping row="1" col="15">ricntrint.inuring </mapping>
+				<mapping row="1" col="16">ricntrint.ceding_reference </mapping>
+				<mapping row="1" col="17">ricntrint.business_deprtmt </mapping>
+				<!-- <mapping row="1" col="18">ricntrint.section_ref_no </mapping> -->
+				<mapping row="1" col="19">ricntrint.section_name </mapping>
+				<mapping row="1" col="20">ricntrint.section_sl_name </mapping>
+				<mapping row="1" col="21">ricntrint.insured_name </mapping>
+				<mapping row="1" col="22">ricntrint.section_type </mapping>
+				<mapping row="1" col="23">ricntrint.section_type_no </mapping>
+				<mapping row="1" col="24">ricntrint.prem_acct_basis </mapping>
+				<mapping row="1" col="25">ricntrint.claim_acct_basis </mapping>
+				<mapping row="1" col="26">ricntrint.accumulate_basis </mapping>
+				<mapping row="1" col="27">ricntrint.layer_no </mapping>
+				<mapping row="1" col="28">ricntrint.pliability_from </mapping>
+				<mapping row="1" col="29">ricntrint.pliability_to </mapping>
+				<mapping row="1" col="30">ricntrint.xol_protection </mapping>
+				<mapping row="1" col="31">ricntrint.facultativ_share </mapping>
+				<mapping row="1" col="32">ricntrint.deductible_amnt </mapping>
+				<mapping row="1" col="33">ricntrint.layer_amount </mapping>
+				<mapping row="1" col="34">ricntrint.manager_company </mapping>
+				<mapping row="1" col="35">ricntrint.sharing_company1 </mapping>
+				<mapping row="1" col="36">ricntrint.sharing_company2 </mapping>
+				<mapping row="1" col="37">ricntrint.sharing_company3 </mapping>
+				<mapping row="1" col="38">ricntrint.assumed_company </mapping>
+				<mapping row="1" col="39">ricntrint.company_code </mapping>
+				<mapping row="1" col="40">ricntrint.policy_no </mapping>
+				<mapping row="1" col="41">ricntrint.object_id </mapping>
+				<mapping row="1" col="42">ricntrint.endorsement_no </mapping>
+				<mapping row="1" col="43">ricntrint.calculation_type </mapping>
+				<mapping row="1" col="44">ricntrint.amount </mapping>
+				<mapping row="1" col="45">ricntrint.percentage </mapping>
+				<mapping row="1" col="46">ricntrint.model </mapping>
+				<mapping row="1" col="47">ricntrint.adj_percentage </mapping>
+				<mapping row="1" col="48">ricntrint.adj_model </mapping>
+				<mapping row="1" col="49">ricntrint.adj_minimum </mapping>
+				<mapping row="1" col="50">ricntrint.adj_maximum </mapping>
+				<mapping row="1" col="51">ricntrint.net_prem_pct </mapping>
+				<mapping row="1" col="52">ricntrint.gross_prem_pct </mapping>
+				<mapping row="1" col="53">ricntrint.inwds_comm_pct </mapping>
+				<mapping row="1" col="54">ricntrint.reinst_from1 </mapping>
+				<mapping row="1" col="55">ricntrint.reinst_to1 </mapping>
+				<mapping row="1" col="56">ricntrint.reinst_type1 </mapping>
+				<mapping row="1" col="57">ricntrint.reinst_prm_pct1 </mapping>
+				<mapping row="1" col="58">ricntrint.reinst_flat_val1 </mapping>
+				<mapping row="1" col="59">ricntrint.reinst_from2 </mapping>
+				<mapping row="1" col="60">ricntrint.reinst_to2 </mapping>
+				<mapping row="1" col="61">ricntrint.reinst_type2 </mapping>
+				<mapping row="1" col="62">ricntrint.reinst_prm_pct2 </mapping>
+				<mapping row="1" col="63">ricntrint.reinst_flat_val2 </mapping>
+				<mapping row="1" col="64">ricntrint.reinst_from3 </mapping>
+				<mapping row="1" col="65">ricntrint.reinst_to3 </mapping>
+				<mapping row="1" col="66">ricntrint.reinst_type3 </mapping>
+				<mapping row="1" col="67">ricntrint.reinst_prm_pct3 </mapping>
+				<mapping row="1" col="68">ricntrint.reinst_flat_val3 </mapping>
+				<mapping row="1" col="69">ricntrint.aggr_period </mapping>
+				<mapping row="1" col="70">ricntrint.aggr_basis </mapping>
+				<mapping row="1" col="71">ricntrint.aggr_limit_val </mapping>
+				<mapping row="1" col="72">ricntrint.aggr_stability </mapping>
+				<mapping row="1" col="73">ricntrint.stability_type </mapping>
+				<mapping row="1" col="74">ricntrint.stab_type_basis </mapping>
+				<mapping row="1" col="75">ricntrint.rate_type </mapping>
+				<mapping row="1" col="76">ricntrint.base_index_date </mapping>
+				<mapping row="1" col="77">ricntrint.condition_type </mapping>
+				<mapping row="1" col="78">ricntrint.condition_val </mapping>
+				<mapping row="1" col="79">ricntrint.base_index_rate </mapping>
+				<mapping row="1" col="80">ricntrint.subsystem_id </mapping>
+				<mapping row="1" col="81">ricntrint.ignore_convrsion </mapping>
+				<mapping row="1" col="82">ricntrint.remttance_method </mapping>
+				<mapping row="1" col="83">ricntrint.claims_excluded </mapping>
+				<mapping row="1" col="84">ricntrint.sunset_date </mapping>
+				<mapping row="1" col="85">ricntrint.claim_model </mapping>
+				<mapping row="1" col="86">ricntrint.frequency_type </mapping>
+				<mapping row="1" col="87">ricntrint.claim_aggr_limit </mapping>
+				<mapping row="1" col="88">ricntrint.billing_doc_type </mapping>
+				<mapping row="1" col="89">ricntrint.contract_usage </mapping>
+				<mapping row="1" col="90">ricntrint.interface_type </mapping>
+				<mapping row="1" col="91">ricntrint.cont_amnt_currcy </mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0"/>
+					<cellcheck offset="0"/>
+			
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+
+	<worksheet name="RIREINSINT">
+		<section startRow="1" endRow="1" />
+		<loop startRow="1" endRow="0" items="RIREINSINT" var="rireinsint"
+			varType="com.cnf.esb.utils.beans.RIREINSINT">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">rireinsint.policy_no </mapping>
+				<mapping row="1" col="1">rireinsint.ext_contract_ref </mapping>
+				<mapping row="1" col="2">rireinsint.ext_section_ref </mapping>
+				-->
+				<!-- <mapping row="1" col="3">rireinsint.ri_seq_no </mapping> -->
+				<mapping row="1" col="5">rireinsint.broker_cont_ref </mapping>
+				<mapping row="1" col="6">rireinsint.ri_contract_ref </mapping>
+				<mapping row="1" col="7">rireinsint.reinsur_id </mapping>
+				<mapping row="1" col="8">rireinsint.ri_external_ref </mapping>
+				<mapping row="1" col="9">rireinsint.broker_id </mapping>
+				<mapping row="1" col="10">rireinsint.br_external_ref </mapping>
+				<mapping row="1" col="11">rireinsint.accounting_throu </mapping>
+				<mapping row="1" col="12">rireinsint.specified_share </mapping>
+				<mapping row="1" col="13">rireinsint.net_prem_pct </mapping>
+				<mapping row="1" col="14">rireinsint.gross_prem_pct </mapping>
+				<mapping row="1" col="15">rireinsint.inwds_comm_pct </mapping>
+				<mapping row="1" col="16">rireinsint.version_number </mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<!-- <cellcheck offset="0" /> -->
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+
+
+	<worksheet name="RICNOTFINT">
+		<section startRow="1" endRow="1" />
+		<loop startRow="1" endRow="0" items="RICNOTFINT" var="ricnotfint"
+			varType="com.cnf.esb.utils.beans.RICNOTFINT">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">ricnotfint.policy_no </mapping>
+				<mapping row="1" col="1">ricnotfint.ext_contract_ref </mapping>
+				<mapping row="1" col="2">ricnotfint.ext_section_ref </mapping>
+				<mapping row="1" col="3">ricnotfint.cnt_intr_seq_no </mapping>
+				<mapping row="1" col="4">ricnotfint.ntf_seq_num </mapping>
+				<mapping row="1" col="5">ricnotfint.ntf_type </mapping>
+				<mapping row="1" col="6">ricnotfint.ntf_limit_value </mapping>
+				<mapping row="1" col="7">ricnotfint.ntf_limit_pct </mapping>
+				<mapping row="1" col="8">ricnotfint.ntf_due_day_num </mapping>
+				<mapping row="1" col="9">ricnotfint.ntf_ref_date </mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+
+
+	<worksheet name="RIATCHCINT">
+		<section startRow="1" endRow="1" />
+		<loop startRow="1" endRow="0" items="RIATCHCINT" var="riatchcint"
+			varType="com.cnf.esb.utils.beans.RIATCHCINT">
+			<section startRow="1" endRow="1">
+
+				<mapping row="1" col="0">riatchcint.policy_no </mapping>
+				<mapping row="1" col="1">riatchcint.deal </mapping>
+				<mapping row="1" col="2">riatchcint.ext_section_ref </mapping>
+				<mapping row="1" col="4">riatchcint.term_no </mapping>
+				<mapping row="1" col="5">riatchcint.attr_code </mapping>
+				<mapping row="1" col="6">riatchcint.category_val_seq </mapping>
+				<mapping row="1" col="7">riatchcint.operation </mapping>
+				<mapping row="1" col="8">riatchcint.value </mapping>
+				<mapping row="1" col="9">riatchcint.split_key_1 </mapping>
+				<mapping row="1" col="10">riatchcint.split_key_2 </mapping>
+				<mapping row="1" col="11">riatchcint.split_key_3 </mapping>
+				<mapping row="1" col="12">riatchcint.split_key_4 </mapping>
+				<mapping row="1" col="13">riatchcint.split_key_5 </mapping>
+
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+					<!-- <cellcheck offset="0" >AUTO FAC</cellcheck> -->
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+
+
+	<worksheet name="RICSOBJINT">
+		<section startRow="1" endRow="1" />
+		<loop startRow="1" endRow="0" items="RICSOBJINT" var="ricsobjint"
+			varType="com.cnf.esb.utils.beans.RICSOBJINT">
+			<section startRow="1" endRow="1">
+				<mapping row="1" col="0">ricsobjint.policy_no </mapping>
+				<mapping row="1" col="1">ricsobjint.ext_contract_ref </mapping>
+				<mapping row="1" col="2">ricsobjint.ext_section_ref </mapping>
+				<mapping row="1" col="3">ricsobjint.cnt_intr_seq_no </mapping>
+				<mapping row="1" col="4">ricsobjint.cnt_obj_seq_no </mapping>
+				<mapping row="1" col="5">ricsobjint.cust_object_type </mapping>
+				<mapping row="1" col="6">ricsobjint.cust_object_code </mapping>
+				<mapping row="1" col="7">ricsobjint.obj_val_seq_no </mapping>
+				<mapping row="1" col="8">ricsobjint.content </mapping>
+			</section>
+			<loopbreakcondition>
+				<rowcheck offset="0">
+					<cellcheck offset="0" />
+				</rowcheck>
+			</loopbreakcondition>
+		</loop>
+	</worksheet>
+
+
+
+
+</workbook>

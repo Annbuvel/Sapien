@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project SapienDataLoader with libraries in sub-folder">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/EXAN289.D_ABSA/workspace"/>
+    <property name="dir.jarfile" value="C:/Annbuvel/Extra/Sapien"/>
+    <delete file="${dir.jarfile}/Sapien.jar" />
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/Sapien.jar">
+            <manifest>
+                <attribute name="Main-Class" value="com.cnf.esb.ui.SapienDataLoaderUI"/>
+                <attribute name="Class-Path" value=". lib/poi-3.13-20150929.jar lib/eclipselink.jar lib/javax.persistence_2.1.0.v201304241213.jar 
+                 lib/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar lib/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar 
+                 lib/com.sun.tools.xjc_2.2.0.jar lib/com.sun.xml.bind_2.2.0.v201004141950.jar lib/javax.activation_1.1.0.v201108011116.jar lib/javax.mail_1.4.0.v201005080615.jar 
+                 lib/javax.xml.bind_2.2.0.v201105210648.jar lib/javax.xml.stream_1.0.1.v201004272200.jar lib/hsqldb.jar lib/commons-jexl-2.1.1.jar lib/jxls-reader-2.0.1.jar 
+                 lib/poi-ooxml-3.13-20150929.jar   lib/poi-ooxml-schemas-3.13-20150929.jar lib/slf4j-api-1.7.13.jar lib/xmlbeans-2.6.0.jar lib/commons-digester3-3.2-with-deps.jar lib/yamlbeans-1.0.jar lib/sqljdbc42.jar  properties/ "/>
+            </manifest>
+            <fileset dir="${dir.workspace}/SapienDataLoader/bin"/>
+        </jar>
+
+        <delete dir="${dir.jarfile}/lib"/>
+        <delete dir="${dir.jarfile}/properties"/>
+        <mkdir dir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/poi-3.13-20150929.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/eclipselink.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/javax.persistence_2.1.0.v201304241213.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.tools.xjc_2.2.0.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.xml.bind_2.2.0.v201004141950.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.activation_1.1.0.v201108011116.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.bind_2.2.0.v201105210648.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.stream_1.0.1.v201004272200.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/hsqldb.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/commons-jexl-2.1.1.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/jxls-reader-2.0.1.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/poi-ooxml-3.13-20150929.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/slf4j-api-1.7.13.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/commons-digester3-3.2-with-deps.jar" todir="${dir.jarfile}/lib"/>
+        <copy file="${dir.workspace}/SapienDataLoader/lib/yamlbeans-1.0.jar" todir="${dir.jarfile}/lib"/>
+    	<copy file="${dir.workspace}/SapienDataLoader/lib/xmlbeans-2.6.0.jar" todir="${dir.jarfile}/lib"/>
+    	<copy file="${dir.workspace}/SapienDataLoader/lib/poi-ooxml-schemas-3.13-20150929.jar" todir="${dir.jarfile}/lib"/>
+    	<copy file="${dir.workspace}/SapienDataLoader/lib/sqljdbc42.jar" todir="${dir.jarfile}/lib"/>
+        <mkdir dir="${dir.jarfile}/properties"/>
+         <copy file="${dir.workspace}/SapienDataLoader/properties/SapienDataMapper.xml" todir="${dir.jarfile}/properties"/>
+         <copy file="${dir.workspace}/SapienDataLoader/properties/SapienLoader.fxml" todir="${dir.jarfile}/properties"/>
+    	 <copy file="${dir.workspace}/SapienDataLoader/properties/dbConfig.yaml" todir="${dir.jarfile}/properties"/>
+    	
+    	<!--<copy file="${dir.workspace}/SapienDataLoader/src/META-INF/persistence.xml" todir="${dir.jarfile}/properties"/> -->
+        
+    </target>
+</project>
